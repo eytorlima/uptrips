@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+:root {
+    --main-green: #19847B;
+    --second-green: #7FC5C5;
+    --cplatinum: #DEE5E5;
+    --cbrown: #7E6551;
+    --cblush: #F1E4E8;
+    --cdark: #191516;
+}
+
+div#home-button {
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    width: 70px;
+    height: 70px;
+    background-color: var(--main-green);
+    box-shadow: 0px 3px 6px var(--second-green);
+    border-radius: 50%;
+    bottom: 5%;
+    right: 2%;
+    opacity: 0.65;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms all ease-in-out;
+}
+
+div#home-button img {
+    width: 45px;
+    height: auto;
+    transition: 300ms;
+}
+
+div#home-button:hover , div#facebook-button:hover, div#instagram-button:hover, div#whatsapp-button:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+div#facebook-button, div#instagram-button, div#whatsapp-button {
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-green);
+    box-shadow: 0px 3px 6px var(--second-green);
+    border-radius: 100%;
+    opacity: 0.65;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms all ease-in-out;
+}
+
+div#facebook-button img, div#instagram-button img, div#whatsapp-button img {
+    width: 42px;
+    height: auto;
+    transition: 300ms;
+}
+
+div#facebook-button {
+    left: 2%;
+    bottom: 18%;
+}
+
+div#instagram-button {
+    left: 2%;
+    bottom: 10%;
+}
+
+div#whatsapp-button {
+    left: 2%;
+    bottom: 2%;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+footer {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--second-green), var(--main-green))
+}
+
+div#logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#logo-footer img {
+    width: 100px;
+    height: auto;
+}
+
+div#content-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#contatos-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding-left: 15%;
+    gap: 10px;
+}
+
+div#content-social-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+#social span {
+    font-weight: 500;
+}
+
+.redes-footer {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.redes-footer img {
+    width: 30px;
+}
+
+.redes-footer a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+div#created-by {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+div#created-by a {
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+div#copyright {
+    margin-top: 25px;
+    background-color: var(--second-green);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    div#contatos-footer {
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    div#social {
+        font-size: 0.8rem;
+    }
+
+    div#facebook-button, div#instagram-button, div#whatsapp-button {
+        width: 40px;
+        height: 40px;
+       
+    }
+    
+    div#facebook-button img, div#instagram-button img, div#whatsapp-button img {
+        width: 32px;
+        height: auto; 
+    }
+
+    div#facebook-button {
+        left: 2%;
+        bottom: 18%;
+    }
+    
+    div#instagram-button {
+        left: 2%;
+        bottom: 11%;
+    }
+    
+    div#whatsapp-button {
+        left: 2%;
+        bottom: 4%;
+    }
+
+    div#created-by {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    div#content-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#social {
+        margin: 20px 0px;
+    }
+}

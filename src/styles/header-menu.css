@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+:root {
+    --main-green: #19847B;
+    --second-green: #7FC5C5;
+    --cplatinum: #DEE5E5;
+    --cbrown: #7E6551;
+    --cblush: #F1E4E8;
+    --cdark: #191516;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(145deg, var(--main-green) 60%, var(--second-green));
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#main-logo {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: auto;
+}
+
+#bgiconlogo {
+    width: 90px;
+    height: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--cblush);
+    border-radius: 100%;
+}
+
+header h1 {
+    color: var(--cblush);
+    text-shadow: 1px 1px 3px var(--cdark);
+    font-size: 2rem;
+    text-align: center;
+    width: 70%;
+}
+
+header ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+header li {
+    margin-right: 15px;
+}
+
+header li img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+.bgicon {
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--cblush);
+    opacity: 0.7;
+    margin-right: 10%;
+    transition: 500ms;
+}
+
+.bgicon:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px var(--cdark);
+}
+
+#bordertopmenu {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(145deg, var(--second-green), var(--main-green) 80%);
+}
+
+nav#menu {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#menu {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: var(--second-green);
+    overflow: hidden;
+}
+
+#menu ul {
+    margin: auto 5%;
+    width: 90%;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#menu li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline 2px transparent;
+    transition: 400ms;
+}
+
+#menu li a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.55rem;
+    color: var(--cblush);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px var(--cdark);
+    transition: 400ms;
+}
+
+#menu li a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #19847B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#menu li a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    
+    .hidden-phone, #menu {
+        display: none;   
+    }
+
+    .hidden-desktop {
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        display: flex;
+        background: linear-gradient(145deg, var(--main-green) 60%, var(--second-green));
+        width: 100%;
+        top: 0;
+        height: 120px;
+        align-items: center;
+        overflow: hidden;
+        z-index: 999;
+    }
+    
+    #bordertopmenu {
+        margin-top: 120px;
+    }
+
+    #main-logo {
+        display: flex;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: auto;
+    }
+
+    #bgiconlogo {
+        width: 90px;
+        height: 90px;
+        margin-left: 7.5%;
+        margin-right: 2.5%;
+        background-color: var(--cblush);
+        border-radius: 100%;
+    }
+
+    header h1 {
+        color: var(--cblush);
+        text-shadow: 1px 1px 3px var(--cdark);
+        font-size: 1.8rem;
+        text-align: center;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        width: 70%;
+    }
+
+    #menu-burguer {
+        z-index: 2;
+        display: block;
+        width: 10%;
+        height: 80%;
+        margin-right: 3.5%;
+    }
+      
+    #menu-barras {
+        width: 45px;
+        height: 40px;
+        margin:40px auto;
+        cursor: pointer;
+    }
+    
+    .barra {
+        height: 5px;
+        width: 90%;
+        background-color: var(--cblush);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    
+    #barra1 {
+        transform: translateY(-4px);
+    }
+    
+    #barra3 {
+        transform: translateY(4px);
+    }
+
+    #nav-phone {
+        transition: all 300ms ease-in-out;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 70px;
+    }
+        
+    #nav-phone ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 360ms ease-in-out;
+    }
+
+    #nav-phone li {
+        list-style: none;
+    }
+        
+    #nav-phone a {
+        font-size: 1.55rem;
+        color: var(--cblush);
+        font-weight: bold;
+        text-shadow: 1px 1px 1px var(--cdark);
+        text-decoration: none;   
+    }
+        
+    .menu-bg {
+        top: 120px;
+        width: 100%;
+        height: 0px;
+        position: absolute;
+        z-index: 1;
+        height: 0;
+        background: var(--second-green);
+        opacity: 1;
+        transition: all 350ms ease-in-out;
+    }
+        
+    .change {
+        display: block;
+    }
+        
+    .change #barra1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+        
+    .change #barra2 {
+        opacity: 0;
+    }
+        
+    .change #barra3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+        
+    .change-bg {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    div#bordertopmenu {
+        background: linear-gradient(to left, white, white);
+    }
+
+    div#bgiconlogo {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    #main-logo {
+        width: 50px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.1rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav#nav-phone a {
+        font-size: 0.9rem;
+    }
+
+    nav#nav-phone ul {
+        margin: auto 5px;
+    }
+}
+
+@media (max-width: 359px) {
+    header h1 {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    div.barra {
+        width: 30px;
+    }
+
+    nav#nav-phone a {
+        font-size: 0.6rem;
+    }
+}

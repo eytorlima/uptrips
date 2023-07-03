@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+:root {
+    --main-green: #19847B;
+    --second-green: #7FC5C5;
+    --cplatinum: #DEE5E5;
+    --cbrown: #7E6551;
+    --cblush: #F1E4E8;
+    --cdark: #191516;
+}
+
+div.container {
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+div.container h1 {
+    color: var(--cdark);
+    text-shadow: 1px 1px 3px var(--cbrown);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+#cards {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.card-trip {
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 25%;
+    max-width: 500px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px var(--cdark);
+}
+
+.card-trip img {
+    top: 0;
+    z-index: 1;
+    margin-top: 0;
+    align-self: top;
+    position: absolute;
+    justify-content: center;
+    width: auto;
+    height: 400px;
+    transition: 1s;
+}
+
+div.desc {
+    position: relative;
+    float: left;
+    height: 400px;
+}
+
+.titulo-trip {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.info {
+    opacity: 0;
+    z-index: 0;
+    font-weight: 500;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    transition: all 1.5s ease-in-out;
+}
+
+.card-trip:hover img {
+    z-index: -1;
+    opacity: 0.3;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.card-trip:hover .titulo-trip, .info {
+    z-index: 1;
+    opacity: 1;
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+
+    .card-trip {
+        transition: all 900ms ease-in-out;
+    }
+
+    .card-trip:hover {
+        z-index: 3;
+        width: 400px;
+    }
+}
+
+#vermais {
+    background-color: var(--second-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px auto;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--cdark);
+    transition: 400ms;
+}
+
+#vermais a {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cdark);
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: 400ms;
+}
+
+#vermais:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: var(--main-green);
+}
+
+#vermais:hover a {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    color: var(--cblush);
+}
+
+h1.conheca-up {
+    margin-top: 200px;
+}
+
+p.conheca-up {
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px;
+    padding: 0 70px 0;
+    flex-wrap: wrap;
+}
+
+#confira {
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.feedbacks {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card-feedback {
+    display: flex;
+    width:90%;
+    height: fit-content;
+    background-color: var(--cplatinum);
+    border: solid 3px var(--cbrown);
+    box-shadow: 3px 3px 9px var(--cbrown);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    transition: 500ms all ease-in-out;
+    padding-bottom: 20px;
+}
+
+div.card-feedback:hover {
+    -webkit-transform: scale(1.005);
+    transform: scale(1.005);
+}
+
+div.viagem-fb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0 5%;
+}
+
+div.titulo-fb {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.img-fb {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    border: 5px solid var(--cbrown);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+div.img-fb img {
+    width: 180px;
+}
+
+div.lugar-fb {
+    font-weight: 500;
+}
+
+
+div.fb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 5%;
+}
+
+div.texto-fb {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+div.pessoa-fb {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+@media (max-width: 1023px) {
+
+    div.container {
+        margin-top: 150px;
+    }
+
+    div.container h1 {
+        font-size: 1.7rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-trip {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    div#vermais {
+        margin: 30px auto;
+    }
+
+    h1.conheca-up {
+        margin-top: 120px;
+    }
+
+    div.feedbacks {
+        margin-top: 40px;
+    }
+
+    div.lugar-fb {
+        font-size: 0.85rem;
+    }
+
+    div.texto-fb {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    div.main {
+        margin-top: 180px;
+    }
+    
+    div.container h1 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    div.main h1 {
+        margin-top: 0px;
+    }
+
+    div#cards {
+        margin-top: 0px;
+    }
+
+    div.card-trip {
+        width: 85%;
+    }
+
+    h1.titulo-trip {
+        font-size: 1.6rem;
+        margin-top: 0px;
+    }
+
+    div.info {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    p.conheca-up {
+        padding: 0 10px;
+        font-size: 1.25rem;
+    }
+
+    div.feedbacks {
+        margin-top: 40px;
+    }
+
+    div.card-feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    div.viagem-fb {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    div.fb{
+        width: 94%;
+    }
+
+    div.texto-fb {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+
+    div.pessoa-fb {
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 300px) {
+
+    h1.titulo-trip {
+        font-size: 1.2rem;
+    }
+
+    div.info {
+        font-size: 0.75rem;
+    }
+
+    div.texto-fb {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 0.7rem;
+    }
+
+    div.pessoa-fb {
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+}

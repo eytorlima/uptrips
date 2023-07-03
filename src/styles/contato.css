@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+:root {
+    --main-green: #19847B;
+    --second-green: #7FC5C5;
+    --cplatinum: #DEE5E5;
+    --cbrown: #7E6551;
+    --cblush: #F1E4E8;
+    --cdark: #191516;
+}
+
+h1#contate {
+    text-shadow: none;
+    text-decoration: none;
+    font-size: 3.3rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+div.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div#contatos-cards {
+    display: flex;
+    width: 50%;
+    max-width: 730px;
+    min-width: 615px;
+    margin: 10px 50px;
+    height: max-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 290px;
+    margin: 20px;
+    background-color: #dee5e58a;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    box-shadow: 1px 1px 6px var(--cdark);
+}
+
+div.card:hover {
+    background-color: #dee5e5;
+    -webkit-transform: rotate(-0.8deg);
+    transform: rotate(-0.8deg);
+}
+
+div.card img {
+    width: 80px;
+    margin-top: 20px;
+}
+
+span.title-card {
+    margin: 15px 0 15px 0;
+    font-size: 1.4rem;
+}
+
+span.text-card {
+    font-weight: 500;
+    margin: 10px 5px 5px 0px;
+    flex-wrap: wrap;
+}
+
+span.contato-card {
+    margin: 10px 0 10px 0;
+}
+
+span.contato-card a {
+    text-decoration: underline;
+    color: var(--cdark);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+div#equipe {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px 10px 0;
+    width: 40%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div#equipe img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+div#equipe p {
+    text-align: center;
+    margin: 25px 20px;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+@media (max-width: 1023px) {
+
+    h1#contate {
+        margin-top: 180px;
+        font-size: 2.6rem;
+    }
+
+    .hidden-phone, #equipe {
+        display: none;
+    }
+
+    .hidden-desktop {
+        display: inline-block;
+    }
+
+    div.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div#equipe2 p {
+        text-align: center;
+        align-items: center;
+        font-size: 1.7rem;
+        flex-wrap: wrap;
+        font-weight: 500;
+        margin: 0 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    h1#contate {
+        width: 80%;
+        margin: 185px 10px 0px 40px;
+        font-size: 2rem;
+    }
+
+    div#contatos-cards {
+        width: 100%;
+        margin: 0;
+        min-width: 100%;
+    }
+
+    div.card {
+        width: 240px;
+        margin: 15px 25px;
+    }
+
+    div.card span.text-card {
+        margin: 0 10px;
+    }
+
+}
+
+@media (max-width: 595px) {
+
+    h1#contate {
+        font-size: 1.35rem;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    
+    div.card {
+        width: 70%;
+        margin: 15px 25px;
+    }
+
+    span.text-card {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    div.card {
+        width: 260px;
+        margin: 15px 25px;
+        margin-right: 0px;
+    }
+
+
+}

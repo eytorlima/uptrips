@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/header-menu.css">
+    <link rel="stylesheet" href="src/styles/home-footer.css">
+    <link rel="stylesheet" href="src/styles/texts.css">
+    <link rel="shortcut icon" href="src/imgs/icons/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Up Trips | Home</title>
+</head>
+<body>
+    <header>
+        <div id="bgiconlogo">
+            <a href="#top"><img id="main-logo"src="src/imgs/icons/logo.png" alt="Logo UpTrips"></a>
+        </div>
+        <h1>Viajar é dar um UP na vida!</h1>
+        <ul class="hidden-phone"> <!--lista de ícones-->
+            <li>
+                <div class="bgicon">
+                    <a href="https://www.facebook.com/voudeuptrips" target="_blank">
+                        <img src="src/imgs/icons/icon-facebook.png" alt="Logo Facebook">
+                    </a>
+                </div><!--/background do ícone-->
+            </li>
+            
+            <li>
+                <div class="bgicon">
+                    <a href="https://www.instagram.com/voudeuptrips/" target="_blank">
+                        <img src="src/imgs/icons/icon-instagram.png" alt="Logo Instagram">
+                    </a>
+                </div><!--/background do ícone-->
+            </li>
+            
+            <li>
+                <div class="bgicon">
+                    <a href="https://api.whatsapp.com/send/?phone=5511931319915&text&type=phone_number&app_absent=0" target="_blank">
+                        <img src="src/imgs/icons/icon-whatsapp.png" alt="Logo Whatsapp">
+                    </a>
+                </div><!--/background do ícone-->
+            </li>
+        </ul> <!--/lista-->
+
+        <div id="menu-burguer" class="hidden-desktop"> 
+            <div id="menu-barras" onclick="menuOnClick()">
+                <div id="barra1" class="barra"></div>
+                <div id="barra2" class="barra"></div>
+                <div id="barra3" class="barra"></div>
+            </div>
+        </div> <!--/menu-burguer-->
+        <div class="menu-bg" id="menu-bg">
+            <nav id="nav-phone" class="hidden-desktop">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="viagens.html">Viagens</a></li>
+                    <li><a href="quem-somos.html">Quem somos?</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <nav id="menu" class="hidden-phone">
+        <ul class="hidden-phone"> <!--lista de páginas-->
+            <li>
+                <a href="index.html" target="_self">Home</a>
+            </li>
+            <li>
+                <a href="viagens.html" target="_parent">Viagens</a>
+            </li>
+            <li>
+                <a href="quem-somos.html" target="_parent">Quem somos?</a>
+            </li>
+            <li>
+                <a href="contato.html" target="_parent">Contato</a>
+            </li>
+        </ul> <!--/lista-->
+    </nav> <!--/menu-->
+
+    <div id="home-button"><a href="#top"><img src="src/imgs/icons/home.png" alt="Home Button"></a></div> <!--Botão para voltar ao topo-->
+   
+    <div id="facebook-button" class="hidden-desktop">
+        <a href="https://www.facebook.com/voudeuptrips" target="_blank" class="hidden-desktop">
+            <img src="src/imgs/icons/icon-facebook.png" alt="Logo Facebook" class="hidden-desktop">
+        </a>
+    </div> <!--Facebook-->
+
+    <div id="instagram-button" class="hidden-desktop">
+        <a href="https://www.instagram.com/voudeuptrips/" target="_blank" class="hidden-desktop">
+            <img src="src/imgs/icons/icon-instagram.png" alt="Logo Instagram" class="hidden-desktop">
+        </a>
+    </div> <!--Instagram-->
+
+    <div id="whatsapp-button" class="hidden-desktop">
+        <a href="https://api.whatsapp.com/send/?phone=5511931319915&text&type=phone_number&app_absent=0" target="_blank" class="hidden-desktop">
+            <img src="src/imgs/icons/icon-whatsapp.png" alt="Logo Whatsapp" class="hidden-desktop">
+        </a>
+    </div> <!--Whatsapp-->
+
+    <main> <!--Conteúdo principal-->
+        <div class="container main"> <!--Box que contém todo o conteúdo-->
+            <h1>Mais vendidos</h1>
+
+            <div id="cards"> <!--Box que contém os cards-->
+                <div class="card-trip">
+                    <img src="src/imgs/trips/angra-dos-reis.jpg" alt="Angra dos Reis">
+                    <div class="desc">
+                        <h1 class="titulo-trip">Angra dos Reis</h1>
+                        <div class="info">
+                            <span class="negrito">Angra dos Reis</span> é uma cidade costeira no Rio de Janeiro conhecida por suas praias, ilhas e águas cristalinas. Com um centro histórico charmoso, a cidade oferece uma combinação única de belezas naturais e cultura local. Os visitantes podem desfrutar de passeios de barco, mergulho e trilhas ecológicas, explorando ilhas paradisíacas como a Ilha Grande. Angra dos Reis é um destino turístico imperdível para quem busca natureza, lazer e uma experiência única.
+                        </div>
+                    </div>
+                </div> <!--/card-->
+
+                <div class="card-trip">
+                    <img src="src/imgs/trips/campos-do-jordao.jpg" alt="Campos do Jordão">
+                    <div class="desc">
+                        <h1 class="titulo-trip">Campos do Jordão</h1>
+                        <div class="info">
+                            <span class="negrito">Campos do Jordão</span> é uma charmosa cidade localizada na Serra da Mantiqueira, no estado de São Paulo. Conhecida como a "Suíça Brasileira", a cidade encanta os visitantes com seu clima frio, arquitetura europeia e paisagens deslumbrantes. Com sua atmosfera romântica e aconchegante, Campos do Jordão oferece uma variedade de atividades, como passeios de teleférico, visitas a jardins e parques, além de uma gastronomia sofisticada e diversificada. Campos do Jordão é um destino encantador para aqueles que buscam um refúgio de montanha, repleto de beleza e elegância.
+                        </div>
+                    </div>
+                </div> <!--/card-->
+
+                <div class="card-trip">
+                    <img src="src/imgs/trips/sao-roque.jpg" alt="São Roque">
+                    <di class="desc">
+                        <h1 class="titulo-trip">São Roque</h1>
+                        <div class="info">
+                            <span class="negrito">São Roque</span> é uma cidade encantadora localizada no estado de São Paulo. Conhecida por suas belas paisagens e pela produção de vinhos, São Roque é um destino ideal para os amantes da natureza e gastronomia. Com suas vinícolas e restaurantes aconchegantes, os visitantes podem desfrutar de degustações de vinhos e de uma culinária deliciosa. Além disso, a cidade oferece atividades ao ar livre, como trilhas ecológicas e esportes de aventura. São Roque é um refúgio encantador para quem busca tranquilidade e sabor em meio à natureza.
+                        </div>
+                    </di>
+                </div> <!--/card-->
+            </div> <!--/cards-->
+
+            <div id="vermais"><a href="viagens.html" target="_parent">Ver mais</a></div> 
+        </div> <!--/container-->
+    </main>
+
+    <div class="container"> <!--Box que contém todo o conteúdo-->
+        <h1 class="conheca-up">Conheça a UP!</h1>
+        <p class="conheca-up">
+            Viajar é uma das melhores maneiras de criar memórias inesquecíveis, explorar novos lugares e experimentar novas culturas. Com a Up trips, você pode ter certeza de que terá uma experiência incrível, com todo o conforto e segurança que você merece. Não perca mais tempo, <a class="negrito link" href="contato.html" target="_parent">reserve sua próxima aventura</a> conosco e comece a criar memórias para toda a vida!
+        </p>
+        <p class="conheca-up" id="confira">
+            Confira abaixo os <span class="negrito">feedbacks</span> de alguns de nossos viajantes:
+        </p>
+    </div> <!--/container-->
+    
+    <div class="container feedbacks"> <!--Box que contém todo o conteúdo-->
+        <div class="card-feedback">
+            <div class="viagem-fb">
+                <div class="titulo-fb negrito">Viagem</div>
+                <div class="img-fb hidden-hidden"><img src="src/imgs/trips/campos-do-jordao-fb.jpg" alt="Campos do Jordão"></div>
+                <div class="lugar-fb">Campos do Jordão</div>
+            </div> <!--/viagem-fb-->
+
+            <div class="fb">
+                <div class="texto-fb">
+                    "Minha mãe amou o passeio! Muito obrigado por tornar mais simples a vivência de momentos como o de hoje e por nos proporcionar essa experiência."
+                </div>
+                <div class="pessoa-fb">
+                    - Felipe Lopes
+                </div>
+            </div> <!--/fb-->
+        </div> <!--/card-feedback-->
+
+        <div class="card-feedback">
+            <div class="viagem-fb">
+                <div class="titulo-fb negrito">Viagem</div>
+                <div class="img-fb hidden-hidden"><img src="src/imgs/trips/arraial-do-cabo-fb.jpg" alt="Arraial do Cabo"></div>
+                <div class="lugar-fb">Cabo Frio x Arraial do Cabo</div>
+            </div> <!--/viagem-fb-->
+
+            <div class="fb">
+                <div class="texto-fb">
+                    "Eu amei essa viagem. Foi a melhor viagem que já fiz por conta dos passeios e principalmente pela atenção e confiança que a Bia nos deu! Eu sabia que com sua trip eu não iria me decepcionar!! Essa trip é a melhor de todas que já fui. &#x1F493; &#x1F493; &#x1F493;."
+                </div>
+                <div class="pessoa-fb">
+                    - Kamila Nascimento
+                </div>
+            </div> <!--/fb-->
+        </div> <!--/card-feedback-->
+
+        <div class="card-feedback">
+            <div class="viagem-fb">
+                <div class="titulo-fb negrito">Viagem</div>
+                <div class="img-fb hidden-hidden"><img src="src/imgs/trips/arraial-do-cabo-fb.jpg" alt="Arraial do Cabo"></div>
+                <div class="lugar-fb">Cabo Frio x Arraial do Cabo</div>
+            </div> <!--/viagem-fb-->
+
+            <div class="fb">
+                <div class="texto-fb">
+                    "A viagem foi maravilhosa, a Bia é sensacional &#128079; &#128079; &#128079; &#x1F493;, espero poder viajar mais com a Up Trips!"
+                </div>
+                <div class="pessoa-fb">
+                    - Gleidson B.
+                </div>
+            </div> <!--/fb-->
+        </div> <!--/card-feedback-->
+
+        <div class="card-feedback">
+            <div class="viagem-fb">
+                <div class="titulo-fb negrito">Viagem</div>
+                <div class="img-fb hidden-hidden"><img src="src/imgs/trips/trindade-fb.jpg" alt="Trindade - RJ"></div>
+                <div class="lugar-fb">Trindade - RJ</div>
+            </div> <!--/viagem-fb-->
+
+            <div class="fb">
+                <div class="texto-fb">
+                    "Viajei pela primeira vez para Trindade e foi incrível. Não só pelas praias, mas também pela experiência proporcionada. Foi demais! Tudo já havia sido pensado com carinho. Claro que fiz outras viagens com a Up Trips e sempre entregou bem acima das minhas expectativas."
+                </div>
+                <div class="pessoa-fb">
+                    - Roni Oliveira Almeida.
+                </div>
+            </div> <!--/fb-->
+        </div> <!--/card-feedback-->
+
+        <div class="card-feedback">
+            <div class="viagem-fb">
+                <div class="titulo-fb negrito">Viagem</div>
+                <div class="img-fb hidden-hidden"><img src="src/imgs/trips/arraial-do-cabo-fb.jpg" alt="Arraial do Cabo"></div>
+                <div class="lugar-fb">Arraial do Cabo</div>
+            </div> <!--/viagem-fb-->
+
+            <div class="fb">
+                <div class="texto-fb">
+                    "Eu fiz duas viagens com a Up: na primeira, pra Ubatuba, tinha tudo pra dar errado (por conta dos problemas climáticos), mas, com bastante zelo e atenção da equipe, tivemos todo o suporte necessário e no fim ainda deu praia! <br>
+                    A segunda viagem foi pra Arraial e foi uma viagem maravilhosa!"
+                </div>
+                <div class="pessoa-fb">
+                    - Hudson Carvalho.
+                </div>
+            </div> <!--/fb-->
+        </div> <!--/card-feedback-->
+
+        <div class="card-feedback">
+            <div class="viagem-fb">
+                <div class="titulo-fb negrito">Viagem</div>
+                <div class="img-fb hidden-hidden"><img src="src/imgs/trips/arraial-do-cabo-fb.jpg" alt="Arraial do Cabo"></div>
+                <div class="lugar-fb">Arraial do Cabo</div>
+            </div> <!--/viagem-fb-->
+
+            <div class="fb">
+                <div class="texto-fb">
+                    "Muito mais do que uma viagem, uma experiência incrível e indescritível! Além de conhecer o Caribe Brasileiro e vários outros lugares, muitas curiosidades sobre a história e a geografia dos locais graças ao guia turístico
+                    proporcionado pela Bia! E, falando em Bia, que super profissional! Brincalhona, sorridente e cuida de todos os detalhes com muito carinho. &#x1F493;"
+                </div>
+                <div class="pessoa-fb">
+                    - Divania Pereira.
+                </div>
+            </div> <!--/fb-->
+        </div> <!--/card-feedback-->
+    </div> <!--/container;/feedbacks-->
+    
+    <footer>
+        <div id="logo-footer">
+            <img src="src/imgs/icons/logo.png" alt="Logo Up Trips">
+        </div>
+
+        <div id="content-footer"> <!--Box com os contatos principais-->
+            <div id="contatos-footer">
+                Precisa de ajuda? Entre em contato:
+                <span class="negrito">email.com</span>
+                <span class="negrito">(11) 93131-9915</span>
+            </div> <!--/content-footer-->
+
+            <div id="social">
+                <span>Confira nossas redes sociais:</span>
+                <div id="content-social-footer"> <!--Box com as redes principais-->
+                    <div class="redes-footer">
+                        <div class="img-footer"><img src="src/imgs/icons/icon-instagram-footer.png" alt="Ícone Instagram"></div>
+                        <a class="negrito link" href="https://www.instagram.com/voudeuptrips/" target="_blank">@voudeuptrips</a>
+                    </div>
+
+                    <div class="redes-footer">
+                        <div class="img-footer"><img src="src/imgs/icons/icon-facebook-footer.png" alt="Ícone Facebook"></div>
+                        <a class="negrito link" href="https://www.facebook.com/voudeuptrips" target="_blank">Up Trips</a>
+                    </div>
+
+                    <div class="redes-footer">
+                        <div class="img-footer"><img src="src/imgs/icons/link-footer.png" alt="Ícone Link"></div>
+                        <a class="negrito link" href="#" target="_blank">Linktree</a>
+                    </div>
+                </div> <!--/content-social-footer-->
+            </div> <!--/social-->
+        </div>
+
+        <div id="created-by">Desenvolvido por: <a href="https://github.com/eytorlima" target="_blank"> Eytor Lima</a></div> <!--créditos-->
+        
+        <div id="copyright"> Up Trips <br> 2018 - 2023</div>
+    </footer>
+
+    <script src="src/scripts/index.js"></script>
+</body>
+</html>

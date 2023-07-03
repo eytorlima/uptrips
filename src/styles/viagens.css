@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+:root {
+    --main-green: #19847B;
+    --second-green: #7FC5C5;
+    --cplatinum: #DEE5E5;
+    --cbrown: #7E6551;
+    --cblush: #F1E4E8;
+    --cdark: #191516;
+}
+
+h1#main-title-viagens {
+    margin: 100px auto;
+}
+
+div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.viagens-cards {
+    width: 98%;
+    margin: 15px auto;
+}
+
+div.card {
+    border-radius: 3px;
+    margin: 15px auto 40px;
+    width: 90%;
+    height: 680px;
+    max-height: auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 3px 9px var(--cdark);
+    transition: all 500ms ease-in-out;
+}
+
+div.card:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+div.img-viagem {
+    width: 40%;
+    margin: 10px 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+div.img-viagem img {
+    width: 100%;
+    max-height: 500px;
+    margin: auto;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.infos-viagem {
+    width: 55%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h2.title-viagem {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 30px auto 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+span.extra-viagem {
+    display: flex;
+    margin: 0 auto 50px;
+    gap: 3px;
+    font-size: 1.3rem;
+}
+
+div.principal-viagem {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 300px;
+    margin: 10px auto;
+}
+
+div.principal-viagem ul {
+    list-style-image: url(../imgs/icons/veri.png);
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.853);
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    height: auto;
+    width: 40%;
+    margin: auto;
+}
+
+div.principal-viagem li {
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+span.preco {
+    font-size: 2rem;
+    display: flex;
+    width:  50%;
+    height: 90%;
+    margin: auto;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span.real {
+    font-size: 3.5rem;
+    color: green;
+    text-shadow: 3px 3px 6px lightgreen;
+    font-weight: bold;
+}
+
+span.taxas {
+    margin: 10px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    text-align: justify;
+    align-items: center;
+}
+
+div.embarque-compra {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+div.embarques {
+    width: 40%;
+    height: 90%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div.embarques span.title-embarque {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+div.embarques ul {
+    padding-left: 20px;
+}
+
+div.embarques ul a {
+    color: var(--cdark);
+    text-shadow: 1px 1px 1px var(--cbrown);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+div.comprar {
+    width: 55%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+}
+
+div.comprar-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    box-shadow: 3px 3px 9px green;
+    border-radius: 6px;
+    width: 250px;
+    height: 70px;
+    margin: auto;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: green;
+    text-shadow: 1px 1px 1px var(--cdark);
+    transition: all 500ms ease-in-out;
+}
+
+div.comprar-button:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    color: var(--cblush);
+    text-shadow: 1px 1px 1px var(--cdark);
+    font-size: 1.75rem;
+    background-color: green;
+    box-shadow: 3px 3px 9px lightgreen;
+}
+
+div.comprar-button a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.comprar-button img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+
+h1#second-title-embarques {
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+div.card-embarque {
+    margin: 0px auto 15px;
+    width: 70%;
+    height: 300px;
+    min-height: auto;
+    border-radius: 3px;
+    box-shadow: 3px 3px 9px var(--cdark);
+    display: flex;
+    flex-direction: row;
+}
+
+div.principal-local {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    width: 55%;
+    justify-content: center;
+}
+
+div.principal-local h2 {
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+div.principal-local img {
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    margin-left: 15px;
+    border: solid 1px var(--cdark);
+    border-radius: 5px;
+    padding: 3px;
+    transition: all 500ms ease-in-out;
+}
+
+div.principal-local img:hover {
+    box-shadow: 1px 1px 3px var(--cdark);
+}
+
+span.endereco, .link-endereco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+div.mapa {
+    display: flex;
+    width: 40%;
+    margin: 15px auto;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+div.mapa iframe {
+    width: 500px;
+    border: none;
+}
+
+@media (max-width: 1023px) {
+
+    h1#main-title-viagens {
+        margin-top: 190px;
+        margin-bottom: 0px;
+    }
+
+    div.card {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    div.img-viagem {
+        width: 60%;
+        border-radius: 6px;
+        margin-bottom: 0;
+    }
+
+    div.infos-viagem {
+        width: 95%;
+        height: 55%;
+        margin-top: 10px;
+    }
+
+    span.extra-viagem {
+        margin-bottom: 0px;
+    }
+
+    div.principal-viagem {
+        margin-bottom: 0px;
+    }
+
+    div.principal-viagem ul {
+        list-style-image: url(../imgs/icons/veri-medio.png);
+    }
+
+    div.comprar-button {
+        height: 60px;
+    }
+
+    h1#second-title-embarques {
+        margin-top: 0px;
+    }
+
+    div.card-embarque {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+        align-items: center;
+    }
+
+    div.principal-local {
+        width: 90%;
+    }
+
+    div.mapa {
+        width: 80%;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    div.mapa iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h1#main-title-viagens {
+        margin-top: 190px;
+        margin-bottom: 0px;
+    }
+
+    div.card {
+        height: fit-content;
+    }
+
+    h2.title-viagem {
+        margin-top: 10px;
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    span.extra-viagem {
+        font-size: 1.05rem;
+        font-weight: 500;
+        width: auto;
+        margin: 10px;
+    }
+
+    div.principal-viagem {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        height: fit-content;
+    }
+
+    div.principal-viagem ul {
+        list-style-image: url(../imgs/icons/veri-pequeno.png);
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    span.preco {
+        font-size: 1.4rem;
+    }
+
+    span.real {
+        font-size: 2.9rem;
+    }
+
+    span.taxas {
+        font-size: 0.7rem;
+    }
+
+    div.embarque-compra {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    div.embarque-compra div.comprar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    div.embarques {
+        margin: 10px auto;
+    }
+
+    div.embarques span.title-embarque {
+        font-size: 0.9rem;
+    }
+
+    div.embarques ul {
+        width: 200px;
+    }
+
+    div.embarques ul li a {
+        font-size: 0.9rem;
+    }
+
+    div.card-embarque {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+}
+
+@media (max-width: 350px) {
+
+    span.real {
+        font-size: 2.4rem;
+    }
+
+    div.embarque-compra div.comprar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        width: 90%;
+    }
+
+    div.comprar-button {
+        display: flex;
+        font-size: 1.2rem;
+        width: 100%;
+        height: 60px;
+    }
+
+    div.comprar-button img {
+        width: 30px;
+        height: auto;
+    }
+
+    div.comprar-button:hover {
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        font-size: 1.25rem;
+    }
+
+    h2.local {
+        justify-content: center;
+        text-align: center;
+    }
+
+    span.endereco, .link-endereco {
+        font-size: 0.9rem;
+    }
+}

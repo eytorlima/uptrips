@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="src/styles/viagens.css">
+        <link rel="stylesheet" href="src/styles/header-menu.css">
+        <link rel="stylesheet" href="src/styles/home-footer.css">
+        <link rel="stylesheet" href="src/styles/texts.css">
+        <link rel="shortcut icon" href="src/imgs/icons/favicon.png">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Up Trips | Viagens</title>
+    </head>
+<body>
+    <header>
+        <div id="bgiconlogo">
+            <a href="index.html"><img id="main-logo"src="src/imgs/icons/logo.png" alt="Logo UpTrips"></a>
+        </div>
+        <h1>Viajar é dar um UP na vida!</h1>
+        <ul class="hidden-phone"> <!--lista de ícones-->
+            <li>
+                <div class="bgicon">
+                    <a href="https://www.facebook.com/voudeuptrips" target="_blank">
+                        <img src="src/imgs/icons/icon-facebook.png" alt="Logo Facebook">
+                    </a>
+                </div><!--/background do ícone-->
+            </li>
+            
+            <li>
+                <div class="bgicon">
+                    <a href="https://www.instagram.com/voudeuptrips/" target="_blank">
+                        <img src="src/imgs/icons/icon-instagram.png" alt="Logo Instagram">
+                    </a>
+                </div><!--/background do ícone-->
+            </li>
+            
+            <li>
+                <div class="bgicon">
+                    <a href="https://api.whatsapp.com/send/?phone=5511931319915&text&type=phone_number&app_absent=0" target="_blank">
+                        <img src="src/imgs/icons/icon-whatsapp.png" alt="Logo Whatsapp">
+                    </a>
+                </div><!--/background do ícone-->
+            </li>
+        </ul> <!--/lista-->
+
+        <div id="menu-burguer" class="hidden-desktop">
+            <div id="menu-barras" onclick="menuOnClick()">
+                <div id="barra1" class="barra"></div>
+                <div id="barra2" class="barra"></div>
+                <div id="barra3" class="barra"></div>
+            </div>
+        </div>
+        <div class="menu-bg" id="menu-bg">
+            <nav id="nav-phone" class="hidden-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#top">Viagens</a></li>
+                    <li><a href="quem-somos.html">Quem somos?</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <nav id="menu" class="hidden-phone">
+        <ul class="hidden-phone"> <!--lista de páginas-->
+            <li>
+                <a href="index.html" target="_self">Home</a>
+            </li>
+            <li>
+                <a href="viagens.html" target="_parent">Viagens</a>
+            </li>
+            <li>
+                <a href="quem-somos.html" target="_parent">Quem somos?</a>
+            </li>
+            <li>
+                <a href="contato.html" target="_parent">Contato</a>
+            </li>
+        </ul> <!--/lista-->
+    </nav> <!--/menu-->
+
+    <div id="home-button"><a href="#top"><img src="src/imgs/icons/home.png" alt="Home Button"></a></div> <!--Botão para voltar ao topo-->
+   
+    <div id="facebook-button" class="hidden-desktop">
+        <a href="https://www.facebook.com/voudeuptrips" target="_blank" class="hidden-desktop">
+            <img src="src/imgs/icons/icon-facebook.png" alt="Logo Facebook" class="hidden-desktop">
+        </a>
+    </div> <!--Facebook-->
+
+    <div id="instagram-button" class="hidden-desktop">
+        <a href="https://www.instagram.com/voudeuptrips/" target="_blank" class="hidden-desktop">
+            <img src="src/imgs/icons/icon-instagram.png" alt="Logo Instagram" class="hidden-desktop">
+        </a>
+    </div> <!--Instagram-->
+
+    <div id="whatsapp-button" class="hidden-desktop">
+        <a href="https://api.whatsapp.com/send/?phone=5511931319915&text&type=phone_number&app_absent=0" target="_blank" class="hidden-desktop">
+            <img src="src/imgs/icons/icon-whatsapp.png" alt="Logo Whatsapp" class="hidden-desktop">
+        </a>
+    </div> <!--Whatsapp-->
+
+    <main> <!--Conteúdo Principal-->
+        <h1 id="main-title-viagens">VIAGENS</h1>
+        <div class="container"> <!--Box que contém todo o conteúdo-->
+            <div class="viagens-cards"> <!--Box com os cards de cada viagem-->
+                <div class="card">
+                    <div class="img-viagem">
+                        <img src="src/imgs/trips/sao-roque.jpg" alt="São Roque">
+                    </div> <!--/img-viagem-->
+
+                    <div class="infos-viagem">
+                        <h2 class="title-viagem">São Roque</h2>
+                        <span class="extra-viagem">Bate e Volta - <span class="negrito">(16 de Julho)</span></span>
+                        
+                        <div class="principal-viagem">
+                            <ul class="lista">
+                                <li>Degustações</li>
+                                <li>Visitas em vinícolas</li>
+                                <li>Transporte</li>
+                                <li>Seguro viagem ANTT</li>
+                                <li>Monitor Up Trips</li>
+                                <li>City Tour com guia credenciado</li>
+                            </ul>
+                            <span class="preco"> 
+                                a partir de 3x 
+                                <span class="real">R$50,00</span> 
+                                (Pix)
+                                <span class="taxas">Consulte taxas para pagamento no cartão de crédito**</span>
+                            </span>
+                        </div> <!--principal-viagem-->
+
+                        <div class="embarque-compra">
+                            <div class="embarques">
+                                <span class="title-embarque">Onde embarcar?</span>
+                                <ul>
+                                    <li><a href="#recreio">Recreio São Jorge - GRU</a></li>
+                                    <li><a href="#tucuruvi">Tucuruvi - SP</a></li>
+                                </ul>
+                            </div>
+                            <div class="comprar">
+                                <div class="comprar-button">
+                                    <a href="https://api.whatsapp.com/send/?phone=5511931319915&text&type=phone_number&app_absent=0" target="_blank">
+                                        <img src="src/imgs/icons/whatsapp-comprar.png" alt="Ícone Whatsapp">
+                                         Tô dentro!
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!--embarque-compra-->
+                    </div> <!--/infos-viagem-->
+                </div> <!--/card-->
+
+                <div class="card">
+                    <div class="img-viagem">
+                        <img src="src/imgs/trips/arraial-do-cabo-fb.jpg" alt="Arraial do Cabo">
+                    </div> <!--/img-viagem-->
+
+                    <div class="infos-viagem">
+                        <h2 class="title-viagem">Cabo Frio x Arraial do Cabo</h2>
+                        <span class="extra-viagem">Trip dos Solteiros - <span class="negrito">(22 a 24 de Setembro)</span></span>
+
+                        <div class="principal-viagem">
+                            <ul class="lista">
+                                <li>Hospedagem com piscina e café da manhã</li>
+                                <li>Passeios de barco</li>
+                                <li>Transporte</li>
+                                <li>Seguro viagem ANTT</li>
+                                <li>Monitor Up Trips</li>
+                            </ul>
+                            <span class="preco"> 
+                                a partir de 5x 
+                                <span class="real">R$150,00</span> 
+                                (Pix)
+                                <span class="taxas">Consulte taxas para pagamento no cartão de crédito**</span>
+                            </span>
+                        </div> <!--principal-viagem-->
+
+                        <div class="embarque-compra">
+                            <div class="embarques">
+                                <span class="title-embarque">Onde embarcar?</span>
+                                <ul>
+                                    <li><a href="#recreio">Recreio São Jorge - GRU</a></li>
+                                    <li><a href="#tucuruvi">Tucuruvi - SP</a></li>
+                                </ul>
+                            </div>
+                            <div class="comprar">
+                                <div class="comprar-button">
+                                    <a href="https://api.whatsapp.com/send/?phone=5511931319915&text&type=phone_number&app_absent=0" target="_blank">
+                                        <img src="src/imgs/icons/whatsapp-comprar.png" alt="Ícone Whatsapp">
+                                         Tô dentro!
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!--embarque-compra-->
+                    </div> <!--/infos-viagem-->
+                </div> <!--/card-->
+
+                <div class="card">
+                    <div class="img-viagem">
+                        <img src="src/imgs/trips/tres-fronteiras.jpg" alt="Tríplice Fronteira">
+                    </div> <!--/img-viagem-->
+
+                    <div class="infos-viagem">
+                        <h2 class="title-viagem">Tríplice Fronteira</h2>
+                        <span class="extra-viagem">Brasil x Argentina x Paraguai - <span class="negrito">(17 a 20 de Novembro)</span></span>
+
+                        <div class="principal-viagem">
+                            <ul class="lista">
+                                <li>2 Cafés</li>
+                                <li>Hospedagem com piscina</li>
+                                <li>Transporte</li>
+                                <li>Seguro viagem ANTT</li>
+                                <li>Monitor Up Trips</li>
+                                <li>City Tour com guia credenciado</li>
+                            </ul>
+                            <span class="preco"> 
+                                a partir de 6x 
+                                <span class="real">R$144,00</span> 
+                                (Pix)
+                                <span class="taxas">Consulte taxas para pagamento no cartão de crédito**</span>
+                            </span>
+                        </div> <!--principal-viagem-->
+
+                        <div class="embarque-compra">
+                            <div class="embarques">
+                                <span class="title-embarque">Onde embarcar?</span>
+                                <ul>
+                                    <li><a href="#recreio">Recreio São Jorge - GRU</a></li>
+                                    <li><a href="#tucuruvi">Tucuruvi - SP</a></li>
+                                </ul>
+                            </div>
+                            <div class="comprar">
+                                <div class="comprar-button">
+                                    <a href="https://api.whatsapp.com/send/?phone=5511931319915&text&type=phone_number&app_absent=0" target="_blank">
+                                        <img src="src/imgs/icons/whatsapp-comprar.png" alt="Ícone Whatsapp">
+                                         Tô dentro!
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!--embarque-compra-->
+                    </div> <!--/infos-viagem-->
+                </div> <!--/card-->
+            </div>
+        </div> <!--/container-->
+    </main>
+
+    <br id="recreio"><br><br>
+
+    <div class="container"> <!--Box com todo o conteúdo-->
+        <h1 id="second-title-embarques">EMBARQUES</h1>
+        <div class="locais-embarques">
+            <div class="card-embarque">
+                <div class="principal-local">
+                    <h2 class="local">Recreio São Jorge</h2>
+                    <span class="endereco" id="copiar-recreio">
+                        Av. Palmira Rossi, 1195 - Recreio São Jorge, Guarulhos - SP, 07144-170
+                        <img src="src/imgs/icons/copy-icon.png" alt="Copiar">
+                    </span>
+                    <span class="link-endereco">
+                        Copiar Link do Endereço
+                        <span class="hidden" id="copy-link-recreio">https://goo.gl/maps/b2n3sHHBTU1sYyZw7</span>
+                        <img src="src/imgs/icons/copy-icon.png" alt="Copiar" id="copiar-recreio2">
+                    </span>
+                </div> <!--/principal-local-->
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.735548750346!2d-46.524910624776794!3d-23.39778227891261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4a90b4fd61d%3A0x63d92839f5008a8f!2sAv.%20Palmira%20Rossi%2C%201195%20-%20Recreio%20S%C3%A3o%20Jorge%2C%20Guarulhos%20-%20SP%2C%2007144-170!5e0!3m2!1spt-PT!2sbr!4v1688015916783!5m2!1spt-PT!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Google-Maps-Recreio" alt="Google Maps indicando a localização de saída do Recreio São Jorge"></iframe>
+                </div> <!--/mapa-->
+            </div> <!--/card-embarque-->
+
+            <div class="card-embarque">
+                <div class="principal-local">
+                    <h2 class="local" id="tucuruvi">Tucuruvi</h2>
+                    <span class="endereco" id="endereco-tucuruvi">
+                        Estação Tucuruvi - Av. Antônio Maria Laet; Lateral do Terminal de Ônibus
+                        <img src="src/imgs/icons/copy-icon.png" alt="Copiar" id="copiar-tucuruvi">
+                    </span>
+                    <span class="link-endereco">
+                        Copiar Link do Endereço
+                        <span class="hidden" id="copy-link-tucuruvi">https://goo.gl/maps/pnVPpdUaFFsNzodE8</span>
+                        <img src="src/imgs/icons/copy-icon.png" alt="Copiar" id="copiar-tucuruvi2">
+                    </span>
+                </div> <!--/principal-local-->
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.444038213694!2d-46.60627892477415!3d-23.480510578855377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66d4dfb74d3%3A0xc205550fd1844919!2sTucuruvi!5e0!3m2!1spt-PT!2sbr!4v1688016533266!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" name="Google-Maps-Tucuruvi" alt="Google Maps indicando a localização de saída do Tucuruvi"></iframe>
+                </div> <!--/mapa-->
+            </div> <!--/card-embarque-->
+        </div> <!--locais-embarques-->
+    </div><!--/container-->
+
+    <footer>
+        <div id="logo-footer">
+            <img src="src/imgs/icons/logo.png" alt="Logo Up Trips">
+        </div>
+
+        <div id="content-footer"> <!--Box com os contatos principais-->
+            <div id="contatos-footer">
+                Precisa de ajuda? Entre em contato:
+                <span class="negrito">email.com</span>
+                <span class="negrito">(11) 93131-9915</span>
+            </div> <!--/content-footer-->
+
+            <div id="social">
+                <span>Confira nossas redes sociais:</span>
+                <div id="content-social-footer"> <!--Box com as redes principais-->
+                    <div class="redes-footer">
+                        <div class="img-footer"><img src="src/imgs/icons/icon-instagram-footer.png" alt="Ícone Instagram"></div>
+                        <a class="negrito link" href="https://www.instagram.com/voudeuptrips/" target="_blank">@voudeuptrips</a>
+                    </div>
+
+                    <div class="redes-footer">
+                        <div class="img-footer"><img src="src/imgs/icons/icon-facebook-footer.png" alt="Ícone Facebook"></div>
+                        <a class="negrito link" href="https://www.facebook.com/voudeuptrips" target="_blank">Up Trips</a>
+                    </div>
+
+                    <div class="redes-footer">
+                        <div class="img-footer"><img src="src/imgs/icons/link-footer.png" alt="Ícone Link"></div>
+                        <a class="negrito link" href="#" target="_blank">Linktree</a>
+                    </div>
+                </div> <!--/content-social-footer-->
+            </div> <!--/social-->
+        </div>
+
+        <div id="created-by">Desenvolvido por: <a href="https://github.com/eytorlima" target="_blank"> Eytor Lima</a></div> <!--créditos-->
+        
+        <div id="copyright"> Up Trips <br> 2018 - 2023</div>
+    </footer>
+
+    <script src="src/scripts/index.js"></script>
+</body>
+</html>
